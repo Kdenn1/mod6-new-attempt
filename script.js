@@ -23,10 +23,24 @@ function addWeatherToPage(data) {
     const temp = Ktoc(data.main.temp);
     const weather = document.createElement("div");
     weather.classList.add("weather");
-    //modify the html from js so that data goes in the browser window 
+
+//need the current date 
+let today = new Date();
+
+//do the same thing but for 7 day forecast 
+    const forecast = document.createElement("div");
+    forecast.classList.add("forecast")
+    
+//modify the html from js so that data goes in the browser window 
     weather.innerHTML = `<h2><img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" /> 
     ${temp}°C <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png"/></h2>
-    <small>${data.weather[0].main}</small>`;
+    <small>${data.weather[0].main}</small>
+    <h4> ${today} </h4>`;
+    
+    
+  
+    
+    
 
     //make sure it's blank so data is displayed  
     main.innerHTML = "";
