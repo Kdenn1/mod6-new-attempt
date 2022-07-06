@@ -5,6 +5,8 @@ const main = document.getElementById("main");
 const form = document.getElementById("form");
 const search = document.getElementById("search");
 
+const submitBtn = document.getElementById("submitBtn");
+
 //do the api call to return the data
 const url = (city) =>
 `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=6fcd46ca0bc9014cd6e642c6441a435a`
@@ -42,6 +44,8 @@ let today = new Date();
     //append the child element 
     main.appendChild(weather);
 }
+//submit button 
+
 
 //call the Ktoc const that was established above 
 function Ktoc(K) {
