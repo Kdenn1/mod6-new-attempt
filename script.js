@@ -37,11 +37,6 @@ let today = new Date();
     <small>${data.weather[0].main}</small>
     <h4> ${today} </h4>`;
     
-    
-  
-    
-    
-
     //make sure it's blank so data is displayed  
     main.innerHTML = "";
     //append the child element 
