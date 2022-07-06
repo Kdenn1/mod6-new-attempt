@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+body {
+    background: rgb(240, 111, 64);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 150vh;
+    max-height: 400vh;
+}
+
+input {
+    background-color: white;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow:rgb(206, 206, 206);
+    margin-top: -50px;
+    min-width: 200px;
+    max-width: 600px;
+}
+
+h2 small {
+    background-color: white;
+    min-width: 400px;
+    min-height: 200px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.weather {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.weather h2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
