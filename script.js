@@ -9,7 +9,7 @@ const submitBtn = document.getElementById("submitBtn");
 
 //do the api call to return the data
 const url = (city) =>
-`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=6fcd46ca0bc9014cd6e642c6441a435a`
+`HTTPS://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=6fcd46ca0bc9014cd6e642c6441a435a`
 
 //function to tell the app what to do with the json returned data 
 async function getWeatherByLocation(city) {
@@ -34,8 +34,8 @@ let today = new Date();
     forecast.classList.add("forecast")
     
 //modify the html from js so that data goes in the browser window 
-    weather.innerHTML = `<h2><img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" /> 
-    ${temp}°C <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png"/></h2>
+    weather.innerHTML = `<h2><img src="HTTPS://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" /> 
+    ${temp}°C <img src="HTTPS://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png"/></h2>
     <small>${data.weather[0].main}</small>
     <h4> ${today} </h4>`;
     
@@ -60,5 +60,4 @@ form.addEventListener("submit", (e) => {
         getWeatherByLocation(city);
     }
 });
-
 
