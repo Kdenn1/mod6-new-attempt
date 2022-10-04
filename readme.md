@@ -21,3 +21,10 @@ SO THAT I can plan a trip accordingly
   THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
 5)WHEN I click on a city in the search history
   THEN I am again presented with current and future conditions for that city
+  
+  # Screenshot of working application 
+  
+![Screenshot (101)](https://user-images.githubusercontent.com/103376676/193725476-a77fc1ea-d8e1-438c-a202-995ef417f533.png)
+
+# Technologies used 
+This project utilizes html, css and javascript. 
